@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img2.taw-bio.ir/2025/379264/thumbs/250x1764089715.jpeg"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>Downloader | Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter the video link below ❤</h1>
+      <div class="input-section">
+        <input
+          id="videoUrlInput"
+          type="url"
+          placeholder="Enter link (https://test.com/video.mp4)"
+        /><button class="check-btn" onclick="processUrl()">Checking</button>
+      </div>
+      <div id="messageBox" class="message-box"></div>
+      <div id="videoPreviewContainer" class="video-preview-container">
+        <video id="videoPlayer" controls playsinline></video>
+        <div class="video-controls-overlay">
+          <button class="play-btn" onclick="enterFullScreen()">
+            Full Screen</button
+          ><button class="download-btn" onclick="initiateDownload()">
+            Download
+          </button>
+        </div>
+      </div>
+      <p class="full-screen-note">
+        Use valid video extensions<br />If it gives an error, the problem is
+        with the other site<br />
+      </p>
+      <p class="full-screen-note" style="margin-top: 10px">
+        2026 |
+        <a
+          href="http://github.com/TahaMirahmadi8"
+          target="_blank"
+          rel="noopener noreferrer"
+          >TaHa Mirahmadi
+        </a>
+      </p>
+    </div>
+  </body>
+  <footer>
+    <script src="./assets/script.js"></script>
+  </footer>
+</html>
